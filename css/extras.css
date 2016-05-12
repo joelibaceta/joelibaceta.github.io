@@ -54,7 +54,7 @@
 .soc li a {
     font-family:si!important;
     font-style:normal;
-    font-weight:400;
+    font-weight:200;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     -webkit-box-sizing:border-box;
@@ -76,6 +76,7 @@
     -moz-border-radius: 10px;
     border-radius: 10px;
     margin-right: 2px;
+    margin-top: 5px;
     color: #ffffff;
     background-color: none;
 }
