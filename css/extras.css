@@ -157,3 +157,10 @@
 .soc-apple:before {
     content:'O';
 }
+
+.soc-wordpress {
+    background-color: #464646;
+}
+.soc-wordpress:before {
+    content:'y';
+}
