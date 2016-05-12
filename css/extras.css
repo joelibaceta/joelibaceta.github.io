@@ -26,6 +26,19 @@
     }
 }
 
+
+
+.circular {
+	width: 200px;
+	height: 200px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url("https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAQMAAAAJDczNWI1NTU3LTk4MzMtNGI2YS1hODBlLTg3NjM5YTczYmE4Zg.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+	}
+
 .soc {
     overflow:hidden;
     margin:0; padding:0;
