@@ -1,31 +1,142 @@
-.personal-information {
+
+html,body{height:100%; overflow: hidden;}
+
+.container-fluid { 
+    min-height: 100%;
+    height: 100%;
+}
+
+.fill {
+    height:100%;
+    
+}
+
+.row .fill {
+    padding: 50px;
+}
+
+h1 {
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    justify-content: space-between;
+}
+
+p.subtitle {
+    font-size: 16px;
+    color: #8c8c8c;
+}
+
+.right-dotted-border {
+    border-right: 1px dashed #acacac;
+    
+}
+
+p.plot-title {
+    font-size: 12px;
     text-align: center;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
+    height:100%;
+    align-items: left; 
+    justify-content: space-evenly;
 }
 
-.personal-information h3 {
-    font-family: 'Times new roman';
+.social-icon {
+    margin:4px;
+    display: block;
+    cursor: pointer;
 }
 
-@font-face {
-    font-family: 'si';
-    src: url('../fonts/socicon.eot');
-    src: url('../fonts/socicon.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/socicon.woff') format('woff'),
-         url('../fonts/socicon.ttf') format('truetype'),
-         url('../fonts/socicon.svg#icomoonregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
- 
-}
- 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-        font-family:si;
-        src: url(PATH_TO/socicon.svg) format(svg);
-    }
+.contributions {
+    margin-top: 20px;
+    display: flex-start;
+    flex-direction: column;
 }
 
+.publication {
+    padding: 10px;
+    border: 1px solid #acacac;   
+    display: flex;
+    
+}
+
+.publication.row { 
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.publication p {
+    font-size: 12px;
+    margin: 0;
+    
+}
+
+.publication img {
+    width: 80%;
+}
+
+.publication .col-4 {
+    text-align: center;
+}
+
+
+
+.my-projects {
+    margin-top: 20px;
+    display: flex-start;
+    flex-direction: column;
+
+}
+
+.project-item {
+    display: block;
+    padding: 10px;
+    border: 1px solid #acacac;  
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    cursor: pointer; 
+}
+
+.project-item p {
+    font-size: 12px;
+    margin: 0;
+    
+}
+
+.projects {
+    overflow: auto;
+    height: 100%;
+    padding-bottom: 20px; 
+}
+
+.publications {
+    overflow: auto;
+    height: 100%;
+    padding-bottom: 20px; 
+    padding-top: 10px; 
+}
 
 
 .circular {
@@ -37,130 +148,38 @@
 	background: url("https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAQMAAAAJDczNWI1NTU3LTk4MzMtNGI2YS1hODBlLTg3NjM5YTczYmE4Zg.jpg") no-repeat;
     background-position: center;
     background-size: cover;
-	}
-
-.soc {
-    overflow:hidden;
-    margin:0; padding:0;
-    list-style:none;
 }
 
-.soc li {
-    display:inline-block;
-    *display:inline;
-    zoom:1;
+.torrents {
+    background-image: url("../images/torrents.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.soc li a {
-    font-family:si!important;
-    font-style:normal;
-    font-weight:200;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    -ms-box-sizing:border-box;
-    -o-box-sizing:border-box;
-    box-sizing:border-box;
-    overflow:hidden;
-    text-decoration:none;
-    text-align:center;
-    display:block;
-    position: relative;
-    z-index: 1;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 24px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    margin-right: 2px;
-    margin-top: 5px;
-    color: #ffffff;
-    background-color: none;
+.turing {
+    background-image: url("../images/turing.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.soc-icon-last{
-    margin:0 !important;
+.soon {
+    text-align: center;
+    padding: 40px;
+    font-size: 14px;
+    color: #c8c8c8;
 }
 
-.soc-twitter {
-    background-color: #4da7de;
-}
-.soc-twitter:before {
-    content:'a';
-}
-.soc-facebook {
-    background-color: #3e5b98;
-}
-.soc-facebook:before {
-    content:'b';
-}
-.soc-google {
-    background-color: #d93e2d;
-}
-.soc-google:before {
-    content:'c';
-}
-.soc-linkedin {
-    background-color: #3371b7;
-}
-.soc-linkedin:before {
-    content:'j';
-}
-.soc-github {
-    background-color: #5380c0;
-}
-.soc-github:before {
-    content:'Q';
-}
-.soc-email1 {
-    background-color: #578AD6;
-}
-.soc-email1:before {
-    content:'<';
-}
-.soc-wikipedia {
-    background-color: #000000;
-}
-.soc-wikipedia:before {
-    content:'N';
-}
-.soc-skype {
-    background-color: #28abe3;
-}
-.soc-skype:before {
-    content:'g';
-}
-.soc-behance {
-    background-color: #000000;
-}
-.soc-behance:before {
-    content:'H';
-}
-.soc-spotify {
-    background-color: #7bb342;
-}
-.soc-spotify:before {
-    content:'o';
-}
-.soc-youtube {
-    background-color: #e02a20;
-}
-.soc-youtube:before {
-    content:'r';
-}
-.soc-apple {
-    background-color: #B9BFC1;
-}
-.soc-apple:before {
-    content:'O';
+.badges {
+    padding-top: 5px;
+    vertical-align: middle;
 }
 
-.soc-wordpress {
-    background-color: #464646;
+.badges svg {
+    margin-top: -3px;
 }
-.soc-wordpress:before {
-    content:'y';
+
+.badges span {
+    margin-right: 10px;
 }
