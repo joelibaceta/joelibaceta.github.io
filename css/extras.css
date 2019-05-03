@@ -191,6 +191,10 @@ p.plot-title {
 
 @media (max-width: 767px) {
 
+    .social-icons {
+        justify-content: flex-start;
+    }
+
     h1 {
         margin-bottom: 50px;
     }
