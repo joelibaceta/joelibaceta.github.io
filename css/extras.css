@@ -1,7 +1,4 @@
 
-
-
-
 html,body{height:100%; overflow: hidden;}
 
 .container-fluid { 
@@ -15,9 +12,6 @@ html,body{height:100%; overflow: hidden;}
 
 .row .fill {
     padding: 50px;
-}
-
-h1 {
 }
 
 h2 {
@@ -155,14 +149,14 @@ p.plot-title {
 }
 
 .torrents {
-    background-image: url("../images/torrents.jpeg");
+    background-image: url("../images/torrents-min.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .turing {
-    background-image: url("../images/turing.jpeg");
+    background-image: url("../images/turing-min.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
