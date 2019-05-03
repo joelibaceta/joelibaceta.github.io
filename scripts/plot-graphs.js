@@ -152,7 +152,6 @@ function draw_languages_share(elementId) {
 
 function addListeners(){
     Array.from(document.getElementsByClassName("social-icon")).forEach(function(button) {
-        console.log(button);
         button.addEventListener("click", function(){
             link = this.dataset.link;
             window.open(link, '_blank');
@@ -162,7 +161,6 @@ function addListeners(){
         });
     });
     Array.from(document.getElementsByClassName("project-item")).forEach(function(button) {
-        console.log(button);
         button.addEventListener("click", function(){
             link = this.dataset.link;
             window.open(link, '_blank');

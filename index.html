@@ -5,6 +5,7 @@
   <meta name="description" content="Informacion de contacto / Contact Information"/>
   <meta name="author" content="Joel Ibaceta"/>
   <meta name="application-name" content="Joel Ibaceta">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://code.jquery.com/jquery-2.1.0.min.js" ></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
@@ -27,7 +28,7 @@
 <body> 
   <div class="container-fluid"> 
     <div class="row align-items-center fill">
-      <div class="col-sm right-dotted-border fill">
+      <div class="col-xl-4 col-md-6 col-12 right-dotted-border fill">
         <div class="profile">
           <h1>Hello, <br/>I am<br/>Joel Ibaceta</h1>
           <p class="subtitle">
@@ -38,8 +39,8 @@
 
             </canvas>
           </div>
-          <p class="plot-title">Languages used in the last month</p>
-          <canvas id="last-month-languages">
+          <p class="plot-title invisible-on-mobile">Languages used in the last month</p>
+          <canvas  class= "invisible-on-mobile" id="last-month-languages">
 
           </canvas>
           <div class="bottom-profile">
@@ -156,7 +157,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm right-dotted-border fill">
+      <div class="col-xl-4 col-md-6 col-12 right-dotted-border fill">
           <h2>Let me share with you some personal projects and others in which I contributed</h2>
         <div class="projects">
            
@@ -300,7 +301,7 @@
           
         </div>
       </div>
-      <div class="col-sm fill">
+      <div class="col-xl-4 invisible-on-mobile fill">
         <h2>Read some things I wrote, talks, presentations and in the future I hope ... research papers</h2>
         <div class="publications">
           <div class="publication row">
