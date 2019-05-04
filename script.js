@@ -54,9 +54,9 @@ function prepare_data(data) {
     });
 
     data.forEach(element => {
-        result.labels.push(element.name)
+        result.labels.push(element.name + " (" + element.percent + "%)")
         result.datasets[0].data.push(
-            element.percent 
+            element.percent
         );
     });
     return result;
@@ -143,7 +143,6 @@ function draw_languages_share(elementId) {
         url: 'https://wakatime.com/share/@joelibaceta/9cb8dc9e-ac75-475d-88a8-8a66ef80f884.json',
         dataType: 'jsonp',
         success: function(response) {
-            console.log(response.data);
             data = prepare_data(response.data);
             draw_pie(data, ctx);
         },
