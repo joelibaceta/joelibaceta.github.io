@@ -116,6 +116,18 @@ function draw_pie(data, ctx) {
         options: {
             legend: {
                 position: 'right'
+            },
+            tooltips: {
+                enabled: true,
+                mode: 'single',
+                callbacks: {
+                    title: function (tooltipItem, data) { 
+                        return data.labels[tooltipItem[0].index]; 
+                    },
+                    label: function(tooltipItems, data) { 
+                    },
+                    //footer: function (tooltipItem, data) { return "..."; }
+                }
             }
         }
     });
@@ -140,7 +152,8 @@ function draw_languages_share(elementId) {
     var ctx = document.getElementById(elementId);
     $.ajax({
         type: 'GET',
-        url: 'https://wakatime.com/share/@joelibaceta/9cb8dc9e-ac75-475d-88a8-8a66ef80f884.json',
+        //url: 'https://wakatime.com/share/@joelibaceta/9cb8dc9e-ac75-475d-88a8-8a66ef80f884.json', month
+        url: 'https://wakatime.com/share/@joelibaceta/d6c82088-6c98-4dd6-a2ee-9cf6f1bad568.json', //week
         dataType: 'jsonp',
         success: function(response) {
             data = prepare_data(response.data);
