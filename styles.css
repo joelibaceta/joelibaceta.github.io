@@ -150,6 +150,13 @@ p.plot-title {
     background-position: center;
 }
 
+.bosque {
+    background-image: url("../images/51nijqs25pS-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .soon {
     text-align: center;
     padding: 40px;
